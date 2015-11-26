@@ -1,0 +1,10 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/splash_screen"
+    	android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="0dp"
+	    android:src="@drawable/gilgamesh"
+	    android:contentDescription="Splash"
+	    android:scaleType="centerInside"
+	    >
+	</ImageView>

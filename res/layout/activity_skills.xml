@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+  android:background="@drawable/background_base"
+    >
+
+<TextView
+    android:id="@+id/class_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true"
+	android:padding="10dp"
+	android:text="Select Class:"
+	/>
+    
+<Spinner
+    android:id="@+id/classSelect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/class_text"
+    android:entries="@array/char_classes"
+    android:prompt="@string/class_prompt" 
+    android:padding="10dp"/>
+
+<TextView
+    android:id="@+id/ml_text"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:text="Extra Skill Points"
+	android:layout_below="@id/class_text"
+/>
+
+
+<Spinner
+    android:id="@+id/bonus_skillpoints"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_toRightOf="@id/ml_text"
+	android:layout_below="@id/class_text"
+	android:padding="10dp"
+	/>
+
+<TextView
+    android:id="@+id/skillpoint_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_below="@id/ml_text"
+	android:padding="10dp"
+	android:text="Remanining Skill Points:"
+	/>
+
+<TextView
+    android:id="@+id/skillp_counter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_below="@id/bonus_skillpoints"
+	android:layout_toRightOf="@id/skillpoint_text"
+	android:padding="10dp"
+	
+/>
+
+
+<GridView 
+    android:id="@+id/skillGrid"
+    android:numColumns="3"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" 
+    android:layout_below="@id/skillpoint_text"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+    
+</GridView>
+</RelativeLayout>

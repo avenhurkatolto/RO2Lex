@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geryon.ro2lexicon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.geryon.ro2lexicon.RO2Lex"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geryon.ro2lexicon.Skills"
+            android:label="@string/title_activity_skills"
+            android:parentActivityName="com.geryon.ro2lexicon.RO2Lex" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.geryon.ro2lexicon.RO2Lex" />
+        </activity>
+        <activity
+            android:name="com.geryon.ro2lexicon.Mats"
+            android:label="Lvl50 info+mats"
+            android:parentActivityName="com.geryon.ro2lexicon.RO2Lex" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.geryon.ro2lexicon.RO2Lex" />
+        </activity>
+        <activity
+            android:name="com.geryon.ro2lexicon.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.geryon.ro2lexicon.RO2Lex" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.geryon.ro2lexicon.RO2Lex" />
+        </activity>
+    </application>
+
+</manifest>
+
